@@ -52,6 +52,9 @@ h4 {
 a {
   color: #052d4a;
 }
+.font_large {
+  font-size: 1.8em;
+}
 .font_center {
   text-align: center;
 }
@@ -59,6 +62,9 @@ a {
   text-align: right;
 }
 /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAVIGATION */
+.logo_image {
+  max-width: 5em;
+}
 #js_show_nav {
   height: 100%;
   text-align: center;
@@ -67,7 +73,7 @@ a {
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.8);
   overflow-y: hidden;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HOME PAGE PHOTOS */
@@ -106,8 +112,12 @@ a {
     flex: 50%;
     max-width: 50%;
   }
-  #project_portfolio {
+  #project_portfolio, .project_photo_column {
     width: 100%;
+    order: 2;
+  }
+  #project_container{
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width:767px){
@@ -115,7 +125,14 @@ a {
     flex: 100%;
     max-width: 100%;
   }
-  #project_portfolio {
+  #project_portfolio, .project_photo_column {
     width: 100%;
+    order: 2;
+  }
+  #project_container{
+    flex-wrap: wrap;
+  }
+  #description {
+    order: 1;
   }
 }
