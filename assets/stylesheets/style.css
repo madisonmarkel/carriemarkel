@@ -1,0 +1,121 @@
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! LAYOUT */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.3;
+  cursor: default;
+  background-image: url("../images/dot-grid.png");
+  margin: 0;
+}
+.fixed_width {
+  max-width: 85rem;
+  padding: 0em 1.5em;
+}
+.row {
+  padding: 1.5em 0;
+}
+.flex_display {
+  display: flex;
+}
+.flex_wrap {
+  flex-wrap: wrap;
+}
+.flex_justify_between {
+  justify-content: space-between;
+}
+
+.flex_align_center {
+  align-items: center;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FONT */
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.3em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.5em;
+  opacity: .5;
+}
+a {
+  color: #052d4a;
+}
+.font_center {
+  text-align: center;
+}
+.font_right {
+  text-align: right;
+}
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAVIGATION */
+#js_show_nav {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  overflow-y: hidden;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HOME PAGE PHOTOS */
+.home_photo_column {
+  flex: 25%;
+  max-width: 25%;
+}
+.home_project_photos {
+  vertical-align: middle;
+  width: 100%;
+}
+.home_project_photos:hover {
+  filter: grayscale(100%);
+}
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! PROJECT PHOTOS */
+#project_portfolio {
+  width: 50%;
+}
+.project_photo_column {
+  width: 45%;
+}
+.project_photos {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MISCELLANEOUS */
+.float_right {
+  float: right;
+}
+
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! MEDIA QUERIES */
+@media screen and (max-width:1180px){
+  .home_photo_column, .project_photo_column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  #project_portfolio {
+    width: 100%;
+  }
+}
+@media screen and (max-width:767px){
+  .home_photo_column, .project_photo_column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #project_portfolio {
+    width: 100%;
+  }
+}
