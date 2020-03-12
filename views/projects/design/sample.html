@@ -8,6 +8,7 @@
   <meta name="description" content="Carrie Markel is a talented designer skilled in user experience and interface, and project management.">
   <link rel="stylesheet" href="../../../assets/stylesheets/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -17,30 +18,38 @@
 
 <body>
   <!-- HEADER -->
-  <div id="js_show_nav" style="display:none;">
-    <div class="row">
+  <header>
+    <div class="row_small" style="position:relative;">
       <div class="fixed_width">
-        <p id="js_close_menu" class="js_click_close font_right font_large" style="padding-right:6em;">&times;</p>
-        <p class="font_large"><a href="../../projects/design/sample">Design</a></p>
-        <p class="font_large"><a href="../../projects/design/sample">Branding</a></p>
-        <p class="font_large"><a href="../../home/index.html#about">About</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="fixed_width">
-      <div class="flex_display flex_justify_between flex_align_center flex_wrap">
-        <a href="../../home/index.html"><img src="../../../assets/images/red_head.png" class="logo_image"></a>
-        <div id="js_menu_expander">
-          <span>&#9776;</span>
+        <div class="flex_display flex_justify_between flex_align_center flex_wrap">
+          <a href="../../home/index.html"><img src="../../../assets/images/red_head.png" class="logo_image"></a>
+          <div class="media_xs_hide">
+            <div class="fixed_width flex_display flex_justify_between flex_align_center" style="width:18em;">
+              <a class="desktop_menu" href="../../projects/design/sample.html">Design</a>
+              <a class="desktop_menu" href="../../projects/design/sample.html">Branding</a>
+              <a class="desktop_menu" href="../../home/index.html#about">About</a>
+            </div>
+          </div>
+          <div id="js_menu_expander" class="media_xs_show hide">
+            <i class="material-icons">menu</i>
+          </div>
+          <div id="js_close_menu" class="hide">
+            <i class="material-icons" id="js_close_menu">close</i>
+          </div>
         </div>
       </div>
     </div>
+  </header>
+
+<!-- MOBILE MENU -->
+  <div id="js_show_nav" class="hide sticky">
+    <p class="font_large"><a class="desktop_menu" href="../../projects/design/sample.html">Design</a></p>
+    <p class="font_large"><a class="desktop_menu" href="../../projects/design/sample.html">Branding</a></p>
+    <p class="font_large"><a class="desktop_menu" href="../../home/index.html#about">About</a></p>
   </div>
 
 <!-- PROJECT -->
-  <div class="flex_display flex_justify_between" id="project_container">
+  <div class="flex_display row_large" id="project_container">
     <!-- Photo Grid -->
     <div class="flex_display flex_wrap" id="project_portfolio">
       <div class="project_photo_column">
@@ -48,15 +57,11 @@
         <img src="../../../assets/images/palm.png" class="project_photos">
         <img src="../../../assets/images/rosary_pea.png" class="project_photos">
       </div>
-      <div class="project_photo_column">
-        <img src="../../../assets/images/shark.png" class="project_photos">
-        <img src="../../../assets/images/flower.png" class="project_photos">
-        <img src="../../../assets/images/flower_tongue.png" class="project_photos">
-      </div>
     </div>
     <!-- PROJECT DESCRIPTION -->
     <div id="description" class="fixed_width">
-      <h1>This really super cool thing I did</h1>
+      <h1 class="remove_margin_top">This really super cool thing I did</h1>
+      <h2 class="color_curry font_small">Details details details</h2>
       <p>Bathe me in praise.</p>
     </div>
   </div>

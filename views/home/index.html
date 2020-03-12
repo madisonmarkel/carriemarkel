@@ -8,6 +8,7 @@
   <meta name="description" content="Carrie Markel is a talented designer skilled in user experience and interface, and project management.">
   <link rel="stylesheet" href="../../assets/stylesheets/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -17,32 +18,40 @@
 
 <body>
   <!-- HEADER -->
-  <div id="js_show_nav" style="display:none;">
-    <div class="row">
+  <header>
+    <div class="row_small" style="position:relative;">
       <div class="fixed_width">
-        <p id="js_close_menu" class="js_click_close font_right font_large" style="padding-right:6em;">&times;</p>
-        <p class="font_large"><a href="../projects/design/sample.html">Design</a></p>
-        <p class="font_large"><a href="../projects/design/sample.html">Branding</a></p>
-        <p class="font_large"><a href="#about" class="js_click_close">About</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="fixed_width">
-      <div class="flex_display flex_justify_between flex_align_center flex_wrap">
-        <a href="/"><img src="../../assets/images/red_head.png" class="logo_image"></a>
-        <div id="js_menu_expander">
-          <span>&#9776;</span>
+        <div class="flex_display flex_justify_between flex_align_center flex_wrap">
+          <a href="../home/index.html"><img src="../../assets/images/red_head.png" class="logo_image"></a>
+          <div class="media_xs_hide">
+            <div class="fixed_width flex_display flex_justify_between flex_align_center" style="width:18em;">
+              <a class="desktop_menu" href="../projects/design/sample.html">Design</a>
+              <a class="desktop_menu" href="../projects/design/sample.html">Branding</a>
+              <a class="desktop_menu" href="../home/index.html#about">About</a>
+            </div>
+          </div>
+          <div id="js_menu_expander" class="media_xs_show hide">
+            <i class="material-icons">menu</i>
+          </div>
+          <div id="js_close_menu" class="hide">
+            <i class="material-icons" id="js_close_menu">close</i>
+          </div>
         </div>
       </div>
     </div>
+  </header>
+
+<!-- MOBILE MENU -->
+  <div id="js_show_nav" class="hide sticky">
+    <p class="font_large"><a class="desktop_menu" href="../projects/design/sample.html">Design</a></p>
+    <p class="font_large"><a class="desktop_menu" href="../projects/design/sample.html">Branding</a></p>
+    <p class="font_large"><a class="desktop_menu" href="../home/index.html#about">About</a></p>
   </div>
 
   <!-- INTRODUCTORY -->
   <div class="row" id="intro">
     <div class="fixed_width">
-      <h1 id="about">Carrie Markel | Portfolio</h1>
+      <h1 id="about" class="color_curry">Carrie Markel | Portfolio</h1>
       <p>Designer, Manager, Creator, Writer</p>
     </div>
   </div>
@@ -50,24 +59,19 @@
   <!-- Photo Grid -->
 <div class="flex_display flex_wrap" id="home_portfolio">
   <div class="home_photo_column">
-    <a href="../projects/design/sample.html"><img src="../../assets/images/flower.png" class="home_project_photos"></a>
-    <a href="../projects/design/sample.html"><img src="../../assets/images/flower_tongue.png" class="home_project_photos"></a>
-    <a href="../projects/design/sample.html"><img src="../../assets/images/palm.png" class="home_project_photos"></a>
+    <a href="../projects/design/sample.html"><img src="../../assets/images/flower.png" class="home_project_photos" data-title="Title" data-subtitle="Subtitle"></a>
+    <a href="../projects/design/sample.html"><img src="../../assets/images/flower_tongue.png" class="home_project_photos" data-title="Title" data-subtitle="Subtitle"></a>
+    <a href="../projects/design/sample.html"><img src="../../assets/images/rosary_pea.png" class="home_project_photos" data-title="Title" data-subtitle="Subtitle"></a>
   </div>
   <div class="home_photo_column">
-    <a href="../projects/design/sample.html"><img src="../../assets/images/rosary_pea.png" class="home_project_photos"></a>
-    <a href="../projects/design/sample.html"><img src="../../assets/images/shark.png" class="home_project_photos"></a>
-    <a href="../projects/design/sample.html"><img src="../../assets/images/flower.png" class="home_project_photos"></a>
+    <a href="../projects/design/sample.html"><img src="../../assets/images/rosary_pea.png" class="home_project_photos" data-title="Title" data-subtitle="Subtitle"></a>
+    <a href="../projects/design/sample.html"><img src="../../assets/images/shark.png" class="home_project_photos" data-title="Title" data-subtitle="Subtitle"></a>
+    <a href="../projects/design/sample.html"><img src="../../assets/images/flower.png" class="home_project_photos" data-title="Title" data-subtitle="Subtitle"></a>
   </div>
   <div class="home_photo_column">
-    <a href="../projects/design/sample.html"><img src="../../assets/images/palm.png" class="home_project_photos"></a>
-    <a href="../projects/design/sample.html"><img src="../../assets/images/rosary_pea.png" class="home_project_photos"></a>
-    <a href="../projects/design/sample.html"><img src="../../assets/images/palm.png" class="home_project_photos"></a>
-  </div>
-  <div class="home_photo_column">
-    <a href="../projects/design/sample.html"><img src="../../assets/images/shark.png" class="home_project_photos"></a>
-    <a href="../projects/design/sample.html"><img src="../../assets/images/flower.png" class="home_project_photos"></a>
-    <a href="../projects/design/sample.html"><img src="../../assets/images/flower_tongue.png" class="home_project_photos"></a>
+    <a href="../projects/design/sample.html"><img src="../../assets/images/palm.png" class="home_project_photos" data-title="Title" data-subtitle="Subtitle"></a>
+    <a href="../projects/design/sample.html"><img src="../../assets/images/rosary_pea.png" class="home_project_photos" data-title="Title" data-subtitle="Subtitle"></a>
+    <a href="../projects/design/sample.html"><img src="../../assets/images/palm.png" class="home_project_photos" data-title="Title" data-subtitle="Subtitle"></a>
   </div>
 </div>
   </div>
