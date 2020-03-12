@@ -3,35 +3,114 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta content="width=device-width" name="viewport">
   <title>Carrie Markel</title>
   <meta name="description" content="Carrie Markel is a talented designer skilled in user experience and interface, and project management.">
   <link rel="stylesheet" href="../assets/stylesheets/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
 </head>
 
 <body>
   <!-- HEADER -->
-  <div class="row">
-    <div class="fixed_width">
-      <div class="flex_display">
-        <a href="/"><img src="https://via.placeholder.com/150"></a>
-        <nav class="app_nav" id="nav">
-          <a href="/projects/design">Design</a>
-          <a href="/projects/branding">Branding</a>
-          <a href="/about">About</a>
-          <a href="#" class="hamburger" onclick="hamburger()"><i class="fa fa-bars"></i></a>
-        </nav>
+  <header>
+    <div class="row_small" style="position:relative;">
+      <div class="fixed_width">
+        <div class="flex_display flex_justify_between flex_align_center flex_wrap">
+          <a href="./home/index.html"><img src="../assets/images/red_head.png" class="logo_image"></a>
+          <div class="media_xs_hide">
+            <div class="fixed_width flex_display flex_justify_between flex_align_center" style="width:18em;">
+              <a class="desktop_menu" href="./projects/design/sample.html">Design</a>
+              <a class="desktop_menu" href="./projects/design/sample.html">Branding</a>
+              <a class="desktop_menu" href="./home/index.html#about">About</a>
+            </div>
+          </div>
+          <div id="js_menu_expander" class="media_xs_show hide">
+            <i class="material-icons">menu</i>
+          </div>
+          <div id="js_close_menu" class="hide">
+            <i class="material-icons" id="js_close_menu">close</i>
+          </div>
+        </div>
       </div>
     </div>
+  </header>
+
+<!-- MOBILE MENU -->
+  <div id="js_show_nav" class="hide sticky">
+    <p class="font_large"><a class="desktop_menu" href="./projects/design/sample.html">Design</a></p>
+    <p class="font_large"><a class="desktop_menu" href="./projects/design/sample.html">Branding</a></p>
+    <p class="font_large"><a class="desktop_menu" href="/about.html">About</a></p>
   </div>
 
-  <!-- ABOUT -->
-  <div class="row" id="intro">
+  <!-- INTRODUCTORY -->
+  <div class="row" id="about">
     <div class="fixed_width">
-      <h2><span style="font-size:.5em">I'm</span> <span>Carrie</span></h2>
-      <p>Designer, Manager, Creator, Writer</p>
+      <h1 id="about" class="color_curry">About Me</h1>
+      <p>My path as a design has not been a typical one, but I credit the success I’ve found to my early career days as a teacher. Turns out, holding the attention of 30 second-grade students for an entire day across multiple subjects teaches you a thing or two about human-centered design. Creating differentiated lesson plans and structuring a classroom environment were my crash course in designing for specific users & journeys, and bringing it all back together into a cohesive experience.</p>
+
+      <p>I’ve since shifted my focus to digital design but I still value solving meaningful problems with a focus on web accessibility. I’m currently working in govtech and mulling over the future of service design for cities and governments.</p>
+
+      <p><a href="" target="_blank">Download my resume</a></p>
+      <p><a href="" target="_blank">Find me on LinkedIn</a></p>
+
+      <h3 class="text_uppercase">Senior Product Designer</h3>
+      <h4>OpenCities, Melbourne, Jan 2020–Present</h4>
+      <ul>
+        <li>Consult with product manager to refine concepts for new features &   enhancements to CMS and form builder products</li>
+        <li>Manage 1 junior visual designer & art direct client web-theme projects</li>
+      </ul>
+
+      <h3 class="text_uppercase">Product Designer</h3>
+      <h4>OpenCities, Melbourne, July 2018-Jan 2020</h4>
+      <ul>
+        <li>Wireframe, prototype, and refine UI for CMS and form builder products that service international city governments</li>
+        <li>Designed, spec’d and delivered high-value market features such as form versioning, form response workflow, and product analytic dashboards</li>
+        <li>Partnered with front-end developer to implement product design system using Figma & REACT</li>
+      </ul>
+
+      <h3 class="text_uppercase">Interaction Designer</h3>
+      <h4>PayIt, Kansas City MO, Oct 2016-June 2018</h4>
+      <ul>
+        <li>UX/UI designer for a white-label government payments mobile and web app</li>
+        <li>Re-designed paper-based government services for digital application within a conversational interface</li>
+        <li>Prototyped and collaborated with development team to implement features including a digital wallet for local citizens, billing, receipts, onboarding and notification processes</li>
+      </ul>
+
+      <h3 class="text_uppercase">Graphic Designer</h3>
+      <h4><span class="text_uppercase">CarrieMarkel LLC</span>, Feb 2016–Nov 2018</h4>
+      <ul>
+        <li>Worked with non-profit and education org clients on a contract basis to produce marketing materials and annual reports</li>
+      </ul>
+
+      <h3 class="text_uppercase">Co-Founder</h3>
+      <h4>The Lean Lab, Kansas City, Apr 2014–Nov 2016</h4>
+      <ul>
+        <li>Co-founded an IRS-recognized 501(c)3 organization to train and support education entrepreneurs</li>
+        <li>Developed curriculum and facilitated training sessions with education leaders to teach human-centered design thinking</li>
+        <li>Led communications and outreach strategies while designing collateral for social media, events and programs</li>
+      </ul>
+
+      <h3 class="text_uppercase">Teacher</h3>
+      <h4>Kansas City Public Schools, Aug 2012-May 2014</h4>
+      <ul>
+        <li>Developed differentiated lesson plans based on state learning standards and district curriculum across 4 different subjects for a class of 30+ second-grade students</li>
+        <li>Designed lesson plans for science and math units that fused arts education and exploration</li>
+      </ul>
+
+      <hr/>
+
+      <h3 class="text_uppercase">Training &amp; Education</h3>
+      <h4>HTML/CSS/Javascript for Designers, Superhi, Aug 2018</h4>
+      <h4>UX Fundamentals, General Assembly, May 2017</h4>
+      <h4>Graphic Design Certification, Kansas City Art Institute, Mar 2017</h4>
+      <h4>B.A. English Literature, Colorado College, May 2012</h4>
+
     </div>
   </div>
 
@@ -45,4 +124,5 @@
     </div>
   </footer>
 </body>
+<script src="../../assets/javascript/script.js"></script>
 </html>

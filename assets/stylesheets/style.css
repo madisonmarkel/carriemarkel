@@ -48,11 +48,11 @@ h2 {
   font-weight: 700;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 700;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 1em;
   opacity: .5;
 }
 a {
@@ -60,7 +60,7 @@ a {
   text-decoration: none;
 }
 .font_small {
-  font-size: 1.5em;
+  font-size: .7em;
 }
 .font_large {
   font-size: 1.8em;
@@ -70,6 +70,9 @@ a {
 }
 .font_right {
   text-align: right;
+}
+.text_uppercase {
+  text-transform: uppercase;
 }
 /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER AND NAVIGATION */
 header {
@@ -109,6 +112,10 @@ header {
   filter: grayscale(70%);
 }
 
+/*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ABOUT */
+#about {
+  max-width: 45%;
+}
 /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! PROJECT PHOTOS */
 #project_portfolio {
   width: 40%;
